@@ -1,0 +1,36 @@
+
+// Fonts
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+// Variables
+@import 'variables';
+
+// Bootstrap
+@import '~bootstrap/scss/bootstrap';
+@import "~vue-snotify/styles/material";
+
+.navbar-laravel {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.04);
+}
+
+.style-img{
+  height: 100px !important;
+  width: 100px !important;
+}
+
+.zoom{
+  /* Aumentamos la anchura y altura durante 2 segundos */
+  transition: width 2s, height 2s, transform 2s !important;
+  -moz-transition: width 2s, height 2s, -moz-transform 2s !important;
+  -webkit-transition: width 2s, height 2s, -webkit-transform 2s !important;
+  -o-transition: width 2s, height 2s,-o-transform 2s !important;
+}
+.zoom:hover{
+  /* tranformamos el elemento al pasar el mouse por encima al doble de
+  su tamaño con scale(2). */
+  transform : scale(2) !important;
+  -moz-transform : scale(2) !important;      /* Firefox */
+  -webkit-transform : scale(2) !important;   /* Chrome - Safari */
+  -o-transform : scale(2) !important;        /* Opera */
+}
